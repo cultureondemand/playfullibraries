@@ -1,0 +1,83 @@
+#sections .step:first-child .bgbg{z-index:0;transition:none;-webkit-transition:none;}
+.step{background-color:#fff;font-family:"Roboto Condensed",sans-serif !important;}
+
+.step-content{
+  max-width:420px;
+  min-width:280px;
+  
+  
+  font-family: "Roboto Condensed",sans-serif !important;
+    font-weight: 400;
+    /* text-shadow: 1px 1px 1px #000; */
+    font-size: .85em;
+    background-color: rgba(255, 255, 255, 1);
+    display: block;
+    top: 0;
+    left: 0;
+    color: #000;
+  
+  
+  margin-bottom:2em;padding:1em;text-align:left;width:6.3em;z-index:99999999;line-height:1.45em;position:relative;
+}
+
+#openerimg{z-index:0;}
+.wrap{margin:20px auto 20px;width:100%;text-align:center;}
+.full img{width:90%;height:90%;position:relative;}
+.aspect{position:relative;}
+.aspect:before{content:'';display:block;padding-top:calc(100% * 140/596);}
+.aspect img{height:100%;left:0;position:absolute;top:0;width:100%;}
+.example{-webkit-columns:2 250px;-moz-columns:2 250px;columns:2 250px;-webkit-column-gap:5em;-moz-column-gap:5em;column-gap:5em;-webkit-column-rule-width:1px;-moz-column-rule-width:1px;column-rule-width:1px;-webkit-column-rule-color:#828282;-moz-column-rule-color:#828282;column-rule-color:#828282;margin:2em auto 2em;}
+.example-dotted{-webkit-column-rule-style:dotted;-moz-column-rule-style:dotted;column-rule-style:dotted;}
+ul{margin-bottom:1em;}
+h3{padding:0;font-family:'Oswald', sans-serif;font-weight:800;line-height:1.3em;padding-bottom:.3em;border-bottom:thin dotted #f2f200;margin-top:0;margin-bottom:.6em;top:0;text-transform:none;}
+h3.prog{color:#000;}
+h3.staff{color:#000;}
+h3.part{color:#000;}
+#container-0{background-color:rgba(56, 113, 193,.9);}
+#container-1{background-color:rgba(55, 150, 51,.9);}
+#container-2{background-color:rgba(56, 113, 193,.9);}
+#container-3{background-color:rgba(56, 113, 193,.9);}
+#container-4{background-color:rgba(56, 113, 193,.9);}
+#container-5{background-color:rgba(56, 113, 193,.9);}
+#container-6{background-color:rgba(55, 150, 51,.9);}
+#container-7{background-color:rgba(55, 150, 51,.9);}
+#container-8{background-color:rgba(128, 10, 214,.9);}
+#container-9{background-color:rgba(175, 32, 45,.9);}
+#container-10{background-color:rgba(56, 113, 193,.9);}
+#container-11{background-color:rgba(56, 113, 193,.9);}
+#container-12{background-color:rgba(55, 150, 51,.9);}
+#container-13{background-color:rgba(128, 10, 214,.9);}
+#container-14{background-color:rgba(175, 32, 45,.9);}
+#container-15{background-color:rgba(175, 32, 45,.9);}
+#container-16{background-color:rgba(56, 113, 193,.9);}
+#container-17{background-color:rgba(55, 150, 51,.9);}
+#container-18{background-color:rgba(128, 10, 214,.9);}
+#container-19{background-color:rgba(175, 32, 45,.9);}
+#container-20{background-color:rgba(56, 113, 193,.9);}
+#container-21{background-color:rgba(56, 113, 193,.9);}
+#container-22{background-color:rgba(56, 113, 193,.9);}
+blockquote{font-family:"HelveticaNeue",
+"Helvetica Neue",
+'TeXGyreHerosRegular',
+"Helvetica",
+"Tahoma",
+"Geneva",
+"Arial",
+sans-serif;text-transform:uppercase;font-size:18px;width:100%;margin:0.25em 0;padding:0.35em 40px;line-height:1.45;position:relative;color:#001557;border-left:none;}
+blockquote:before{display:block;padding-left:10px;content:"\201C";font-size:80px;position:absolute;left:-20px;top:-20px;color:#001557;}
+blockquote cite{color:#001557;font-size:14px;display:block;text-align:right;float:right;margin-top:5px;}
+.bigblues{color:#3871C1;font-weight:800;text-transform:uppercase;}
+.tagblues{color:#fff;font-weight:800;text-transform:uppercase;background:none;background-color:none;font-size:.7em;max-width:400px;bottom:3vh;left:3vw;position:fixed;display:block;z-index:999999999999;text-shadow:1px 1px 1px #000;}
+.imgcontainer{display:block;width:100%;text-align:left;margin-left:1em;}
+.imgcontainerB{display:inline-block;width:100%;text-align:center;margin-bottom:.3em;margin-top:1em;}
+#container-22{display:none;}
+#titleCloser{background-color:rgba(56, 113, 193, .9);padding:3vh;left:0;text-transform:none !important;color:#fff;font-size:1.5em;display:none;font-family:"HelveticaNeue",
+"Helvetica Neue",
+'TeXGyreHerosRegular',
+"Helvetica",
+"Tahoma",
+"Geneva",
+"Arial",
+sans-serif;font-weight:400;margin-bottom:0;top:1.8em;text-align:left;line-height:1.3em;position:fixed;width:100%;z-index:99997;}
+#titleCloser img{margin-right:1em;min-width:150px;}
+.introimg{padding:.3em;}
