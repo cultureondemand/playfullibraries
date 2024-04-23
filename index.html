@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html class="no-js objectfit object-fit">
+
+
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+      This framework and functionality is based on this: https://github.com/vlandham/scroll_demo
+      For a full rundown of the theory behind it, see: http://vallandingham.me/scroller.html
+      We have tweaked to make it populoate more dynamically, and include interactive goodies like
+      WebGL, SVG, etc. in the <vis> div created for the original interactive it was intended for.
+
+     |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||| Facebook Sharing Content |||||||||||||||||||||||||||||||||||| -->
+
+  <meta property="og:title" content="AU Playful City Lab">
+ <meta property="og:site_name" content="AU Playful City Lab">
+  <meta property="og:url" content="https://au.edu">
+  <meta property="og:description" content="Playful Cities (and Libraries)">
+  <meta property="fb:app_id" content="1356557814369632">
+  <meta property="og:type" content="website">  
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- ||||||||||||||| Twitter Sharing Content |||||||||||||||||||||| -->
+<!-- 
+<meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@augamecenter" />
+  <meta name="twitter:creator" content="@americanu" />
+  <meta property="og:image" content="http://cultureondemand.com/phenomenal/1.jpg" />
+-->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <meta name="Description" content="Playful Cities . American University">
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <title>Playful Cities (and Libraries) </title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/scrolly.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/step.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <script src="assets/css/demo-styles.css.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Vast+Shadow|Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="assets/js/modernizr.min.js"></script>
+  <script type="text/javascript" src="assets/js/myplan_content.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="assets/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+  	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
+
+
+</head>
+
+
+
+<body>
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||| VIDEO ELEMENT ACTIVATE IN daddy .js file |||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||| Uncomment to use vid & make changes to function  |||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+     |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||| SITE FURNITURE |||||||||||||||||||||||||||| -->
+
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||  LOADER |||||||||||||||||||||||||||||||||||| -->
+
+  <div id="play">
+    
+    
+        <div role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate" data-buffer="true" style="top:50%; ">
+              <div class="mdc-linear-progress__buffering-dots"></div>
+              <div class="mdc-linear-progress__buffer"></div>
+              <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar" style="display:none !important;visibility:hidden !important; ">
+                <span class="mdc-linear-progress__bar-inner"></span>
+              </div>
+              <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                <span class="mdc-linear-progress__bar-inner"></span>
+              </div>
+            </div>
+            
+            
+            
+    <span class="org" style="color:#ed193a;top:47%;right:1%; position:absolute; display:block; ">shhhhhhh ...</span>
+    
+    
+  </div>
+  
+  
+    <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| TOP RIGHT MENU |||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| BOTTOM LEFT DIV ||||||||||||||||||||||||||||||||| -->
+  <div id="outputA" class="output" style="display:none; ">
+<!--       <a href="https://www.youtube.com/watch?v=brlqIueoXPA" target="_blank" style="font-family: 'Oswald', sans-serif; font-weight: 400; font-size: .9em;text-transform:uppercase; ">+ Check out a video</a> -->
+  <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images" data-caption="Backpackers following a dirt trail" style="font-family: 'Oswald', sans-serif; font-weight: 400; font-size: .9em;text-transform:uppercase; "> Click to see a slideshow </a>
+
+  <a href="https://source.unsplash.com/eWFdaPRFjwE/1500x1000" data-fancybox="images" data-caption="Mallorca, Llubí, Spain">
+  </a>
+  
+  <a href="https://source.unsplash.com/c1JxO-uAZd0/1500x1000" data-fancybox="images" data-caption="Danish summer">
+   </a>	
+</div>
+	
+  <div id="outputB" class="output" style="display:none; ">
+<!--       <a href="https://www.youtube.com/watch?v=brlqIueoXPA" target="_blank" style="font-family: 'Oswald', sans-serif; font-weight: 400; font-size: .9em;text-transform:uppercase; ">+ Check out a video</a> -->
+  <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images" data-caption="Backpackers following a dirt trail" style="font-family: 'Oswald', sans-serif; font-weight: 400; font-size: .9em;text-transform:uppercase; "> Click to see a slideshow </a>
+
+  <a href="https://source.unsplash.com/eWFdaPRFjwE/1500x1000" data-fancybox="images" data-caption="Mallorca, Llubí, Spain">
+  </a>
+  
+  <a href="https://source.unsplash.com/c1JxO-uAZd0/1500x1000" data-fancybox="images" data-caption="Danish summer">
+   </a>	
+</div>
+	
+	
+	
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| TOP LEFT LOGO ||||||||||||||||||||||||||||||||||| -->
+    <div id="pmnglogo">
+  <div id="menu">
+     </div>
+    
+    
+         <a data-toggle="toc" style="background-color: none; background: none; "><img src="assets/images/american_u_logo.png" border="0" alt="American University Logo" style="width:10em; min-width:80px;"></a>
+    </div>
+
+
+  </div>
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| TABLE OF CONTENTS ||||||||||||||||||||||||||||||| -->
+  <div id="toc" data-toggle="toc">
+  <br />
+
+
+     <span class="titleline">Playful Cities (and Libraries)</span>
+     <br /> 
+    <span class="tagline">- </span>
+     <br /><br />
+    
+       <noscript>
+      Table of Contents:
+      <br>
+      <ul>
+
+      </ul>
+    </noscript>
+    
+  </div>
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| This is where the content lives ||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| Main container div |||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| Graphic div is the parent for scrolling ||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| Containers have bgs and top bars |||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- ||||| Section contains steps which are the scrolling text |||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| add a static title container |||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <div id="titleCloser">
+    <a href="#" target="_blank" style="background-color: none; background: none;color:#fff; "><img src="assets/images/american_u_logo.png" border="0" alt="American University" align="left" width="10%"></a>
+  </div>
+
+
+<!--   <div id="logoOpener" style="display:inline-block; ">
+    <div class="imgcontainer" data-toggle="toc">
+      <a href="#" style="background-color: none; background: none; "><img src="assets/images/american_u_logo.png" border="0" alt="American University"></a>
+    </div> -->
+  </div>
+
+
+<!-- 
+
+  <div class="tagblues"><a href="http://cultureondemand.com/" target="_blank" style="background-color: none; background: none;color:#fff; ">©2018 Culture On Demand</a></div>
+
+-->
+
+  <div class="container" id="container">
+
+
+    <div class="bgbg js-background-image" id="openerimg" style="visibility:visible; ">
+ 
+
+ 
+ 
+ <picture>
+
+   <source srcset="00_playfulcities.jpg" media="(min-width: 400px)">
+     <img srcset="00_playfulcities.jpg">
+  </picture>
+ 
+ 
+ 
+ 
+  
+ 
+    </div>
+
+
+
+
+
+ <!-- 
+ 
+ 
+
+
+<video autoplay="" playsinline="" muted="" controls="" loop="" poster="1.jpg" id="bgvid4" class="videobig" style="display: inline-block;">
+  <source src="assets/images/bkg/mygoodgood.webm" type="video/webm">  
+  <source src="assets/images/bkg/mywork_1.mp4" type="video/mp4"></video></div>
+
+
+
+  -->
+
+
+    <div id="graphic">
+
+
+
+
+
+
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+      <div id="sections">
+
+
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||| add a static step container ||||||||||||||||||||| -->
+        <!-- |||||||||||| the title slide with scroll prompt |||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+        <!-- ### 0 ### -->
+        <section class="step" style="background: none !important; ">
+          <div id="titleOpener">
+          <span style="line-height:.92em; ">Playful Cities (and Libraries)</span>
+            <div class="subline"></div>
+         <span style="font-size:.5em;line-height:1em; font-family: 'Roboto Condensed',sans-serif !important; font-weight: 300;text-transform:none; ">
+American University Game Center and Dr. Benjamin Stokes' The Playful City Lab<br />
+
+ <!--  -->
+
+  </span>      </div>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+       <!--    <span id="scrollimg">
+            <a href="#step-0" style="background: none !important; z-index: 9999999; ">
+              <img src="assets/images/scrolldown.png" border="0" alt="Scroll Down For More" style="text-align: center; ">
+            </a>
+          </span> -->
+        </section>
+
+
+
+
+
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||| OUTPUT THE REST OF THE STEPS |||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||| FIND THE CONTENT IN content.js |||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||| CALCULATES ARRAY OF TITLES FOR OUTPUT ||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+ 
+
+
+
+        <noscript>
+
+
+
+        </noscript>
+
+      </div>
+      <!-- |||||||||||| The vis div that holds interactive goodies |||||| -->
+
+      <div id="vis" style="display:none; "></div>
+
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||| Close container and graphic ||||||||||||||||||||| -->
+
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script type="text/javascript" src="assets/js/picturefill.min.js"></script>
+  <script type="text/javascript" src="assets/js/background-picture.js"></script>
+  <script type="text/javascript" src="assets/js/queue.js"></script>
+  <script type="text/javascript" src="assets/js/scroller.js"></script>
+  <script type="text/javascript" src="assets/js/toggle.js"></script>
+ <!--  <script type="text/javascript" src="assets/js/preload.js"></script> -->
+  <script type="text/javascript" src="assets/js/slide.js"></script>
+  <script type="text/javascript" src="assets/js/table-of-contents.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+
+
+  <script src="assets/js/scrolly.js"></script>
+
+
+
+
+
+
+    <script src="assets/js/material-components-web.js"></script>
+    
+
+
+
+
+
+
+
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<!-- |||||||||||| Preloader ||||||||||||||||||||||||||||||||||||||| -->
+
+<div class="hidden">
+  <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+ 
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+        
+          
+
+
+
+
+      }
+images.onload = notify();
+
+      function notify()  {
+
+        setTimeout(function(){ 
+
+          document.getElementById('play').style.display = 'none'; 
+ 
+ 
+        }, 3000);
+
+        
+}
+
+
+      preload(
+        "00_playfulcities.jpg",
+        "assets/images/bkg/00_playfulcities.jpg"
+
+      )
+    //--><!]]>
+  </script>
+  
+  
+ 
+ 
+ 
+
+    <script>
+      var determinates = document.querySelectorAll('.mdc-linear-progress');
+      for (var i = 0, determinate; determinate = determinates[i]; i++) {
+        var linearProgress = mdc.linearProgress.MDCLinearProgress.attachTo(determinate);
+        linearProgress.progress = 0.5;
+        if (determinate.dataset.buffer) {
+          linearProgress.buffer = 0.19;
+        }
+      }
+    </script>
+
+
+
+ 
+ 
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42788634-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42788634-1');
+</script>
+
+
+
+
+</div>
+
+  
+  	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/jquery.fancybox.min.js"></script>
+
+  
+  
+ 
+</body>
+
+
+</html>
